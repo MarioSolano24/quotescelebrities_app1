@@ -2,7 +2,9 @@ package edu.itvo.quotescelebrities.presentation.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import edu.itvo.quotescelebrities.R
 import edu.itvo.quotescelebrities.core.utils.CellClickListener
 import edu.itvo.quotescelebrities.databinding.QuoteItemBinding
 import edu.itvo.quotescelebrities.domain.model.QuoteModel
@@ -31,9 +33,17 @@ class QuoteAdapter(private val quotes: List<QuoteModel>,
                 binding.tvQuote.text =  this.quote
                 binding.tvAuthor.text = this.author
 
-                binding.cvQuote.setOnClickListener{
+                binding.cvQuote.findViewById<ImageView>(R.id.btnEdit).setOnClickListener {
                     cellClickListener.onCellClickListener(this)
                 }
+
+                binding.cvQuote.findViewById<ImageView>(R.id.btnDelete).setOnClickListener {
+                    // Función para eliminar la cita
+                }
+
+                /*binding.cvQuote.setOnClickListener{
+                    cellClickListener.onCellClickListener(this)
+                }*/
             }
         }
     }
