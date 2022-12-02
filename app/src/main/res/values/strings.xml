@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">quotescelebrities</string>
+    <string name="app_name">quotes</string>
     <string name="action_settings">Settings</string>
 
     <string name="quotes">Citas célebres</string>
@@ -10,7 +10,7 @@
     <string name="nav_header_subtitle">ITVO</string>
     <string name="nav_header_desc">Navigation header</string>
 
-    <string name="menu_quote_randomly">Display quotes randomly</string>
+    <string name="menu_quote_randomly">Mostrar citas al alteatoriamente</string>
     <string name="menu_quote_add">Quotes add</string>
     <string name="menu_quote_list">Quotes list</string>
     <string name="menu_user_login">Login</string>
